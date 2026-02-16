@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "bitcount";sans-ser;
+    font-size: 1.2rem;
+}
+
+.contenedor {
+    padding: 10px;
+    border: 10px solid;
+    border-color: blue;
+    
+}
+
+.encabezado{
+    grid-area: encabezado ;
+    background-color: blueviolet;
+
+}
+
+.navegacion {
+    grid-area: navegacion;
+    background-color: aqua;
+}
+
+.menu_lateral {
+    grid-area: manu_lateral;
+    background-color: bisque;
+}
+
+.articulo {
+    grid-area: articulo;
+    background-color: brown;
+}
+ .pie_de_pagina {
+    grid-area: pie_de_pagina;
+    background-color: black;
+    color: aliceblue;
+ }
+
+ .contenedor {
+    display: grid;
+    grid-template:
+        "encabezado" 100px
+        "navegacion" 50px
+        "manu_lateral" 100px
+        "articulo" auto
+        "pie_de_pagina" 100px
+ }
