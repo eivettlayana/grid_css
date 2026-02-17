@@ -30,8 +30,9 @@ body {
 }
 
 .menu_lateral {
-    grid-area: manu_lateral;
+    grid-area: menu_lateral;
     background-color: bisque;
+    height: 100px !important;
 }
 
 .articulo {
@@ -47,9 +48,8 @@ body {
  .contenedor {
     display: grid;
     grid-template:
-        "encabezado" 100px
-        "navegacion" 50px
-        "manu_lateral" 100px
-        "articulo" auto
-        "pie_de_pagina" 100px
+        "encabezado encabezado" 100px
+        "navegacion navegacion" 50px
+        "menu_lateral articulo" 100px
+        "pie_de_pagina pie_de_pagina" 100px
  }
